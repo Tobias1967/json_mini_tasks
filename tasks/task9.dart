@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 void main() {
   String json9 = """
 [
@@ -18,6 +20,8 @@ void main() {
   }
 ]
 """;
+  List<String, dynamic> jasonMap = jsonDecode(jsonFile);
 
+  print(jasonMap["title"]);
   // Erstelle eine Instanz der Klasse News basierend auf dem JSON-String json9
 }
